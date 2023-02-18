@@ -1,0 +1,20 @@
+{
+    "name": "MCM_BL0940",
+    "keywords": "BL0940, Energy, Power consumption",
+    "description": "An Arduino library to interface the BL0940 Energy Meter IC with Arduino, ESP32 and Raspberry Pi Pico",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "version": "0.0.1",
+    "exclude": "tests",
+    "examples": "examples/*/*.ino",
+    "frameworks": "arduino",
+    "platforms": [
+        "atmelavr",
+        "espressif8266",
+        "espressif32",
+        "atmelsam",
+        "ststm32"
+    ]
+}
