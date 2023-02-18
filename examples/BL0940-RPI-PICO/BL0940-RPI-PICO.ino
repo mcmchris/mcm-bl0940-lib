@@ -1,3 +1,10 @@
+/*
+ * Install the Raspberry Pi Pico DSP
+ * Put this URL on preferences: https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
+ * Go to the Boards Manager and search for: Raspberry Pi Pico
+ * Install the DSP from: Earle F. Philhower
+ */
+
 #include "MCM_BL0940.h"
 
 BL0940 bl0940;
@@ -49,4 +56,3 @@ void loop() {
   Serial.println("");
   delay(1000);
 }
-
