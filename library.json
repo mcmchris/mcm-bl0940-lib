@@ -4,7 +4,7 @@
     "description": "An Arduino library to interface the BL0940 Energy Meter IC with Arduino, ESP32 and Raspberry Pi Pico",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/mcmchris/mcm-bl0940-lib.git"
     },
     "version": "0.0.1",
     "exclude": "tests",
