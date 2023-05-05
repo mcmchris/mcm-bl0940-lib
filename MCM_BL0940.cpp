@@ -133,7 +133,7 @@ bool BL0940::getVoltage(float *voltage)
     return false;
   }
 
-  *voltage = (float)data * Vref * (R8 + R9 + R10 + R11 + R12) / (79931.0 * R7);
+  *voltage = (float)data * Vref * (R8 + R9 + R10 + R11 + R12) / (79931.0 * R6);
   return true;
 }
 
@@ -149,7 +149,7 @@ bool BL0940::getActivePower(float *activePower)
   int32_t rowActivePower = (int32_t)(data << 8) / 256;
   if (rowActivePower < 0)
     rowActivePower = -rowActivePower;
-  *activePower = (float)rowActivePower * Vref * Vref * (R8 + R9 + R10 + R11 + R12) / (4046.0 * (R5 * 1000.0 / Rt) * R7);
+  *activePower = (float)rowActivePower * Vref * Vref * (R8 + R9 + R10 + R11 + R12) / (4046.0 * (R5 * 1000.0 / Rt) * R6);
   return true;
 }
 
@@ -168,7 +168,7 @@ bool BL0940::getActiveEnergy(float *activeEnergy)
     rowCF_CNT = -rowCF_CNT;
   // Serial.print("Float de Energia: ");
   // Serial.println(rowCF_CNT);
-  *activeEnergy = (float)rowCF_CNT * 1638.4 * 256.0 * Vref * Vref * (R8 + R9 + R10 + R11 + R12) / (3600000.0 * 4046.0 * (R5 * 1000.0 / Rt) * R7);
+  *activeEnergy = (float)rowCF_CNT * 1638.4 * 256.0 * Vref * Vref * (R8 + R9 + R10 + R11 + R12) / (3600000.0 * 4046.0 * (R5 * 1000.0 / Rt) * R6);
 
   return true;
 }

@@ -36,7 +36,7 @@ class BL0940
     const float R10 = 20.0;  //[kOhm]
     const float R11 = 20.0;  //[kOhm]
     const float R12 = 20.0;  //[kOhm]
-    const float R7 = 24.9;  //[Ohm]
+    const float R6 = 24.9;  //[Ohm]
     uint16_t Hz = 60;   //[Hz]
     uint16_t updateRate = 400; //[ms]
 
